@@ -1,24 +1,43 @@
 package edu.wmich.cs1120.la5;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 public class MapCreator implements IMapCreator {
+	private TerrainScanner scanner;
 
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
-		// TODO Auto-generated method stub
+		String line;
+		String[] values = new String[3];
+
+		try {
+			FileReader reader = new FileReader(fileName);
+			BufferedReader buffer = new BufferedReader(reader);
+
+			while ((line = buffer.readLine()) != null) {
+
+			}
+
+			buffer.close();
+		} catch (FileNotFoundException ex) {
+			System.out.println("Invalid file");
+		} catch (IOException ex) {
+			System.out.println("Error reading file");
+		}
 
 	}
 
 	@Override
 	public TerrainScanner getScanner() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.scanner;
 	}
 
 	@Override
 	public void setScanner(TerrainScanner scanner) {
-		// TODO Auto-generated method stub
+		this.scanner = scanner;
 
 	}
 
