@@ -4,10 +4,10 @@
 package edu.wmich.cs1120.la5;
 
 /**
- * @author fafat
+ * @author Jason Gary
  *
  */
-public class Area implements IArea {
+public abstract class Area implements IArea {
 
 	/* (non-Javadoc)
 	 * @see edu.wmich.cs1120.la5.IArea#getBasicEnergyCost()
