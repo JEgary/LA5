@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class MapCreator implements IMapCreator {
+public class MapCreatorFromTxt implements IMapCreator {
 	private TerrainScanner scanner;
 
 	@Override
