@@ -9,6 +9,10 @@ package edu.wmich.cs1120.la5;
  */
 public class Area implements IArea {
 
+	public Area(Double basicEnergyCost, Double elevation, Double radiation, int threshold) {
+		// TODO Auto-generated constructor stub
+	}
+
 	/* (non-Javadoc)
 	 * @see edu.wmich.cs1120.la5.IArea#getBasicEnergyCost()
 	 */
