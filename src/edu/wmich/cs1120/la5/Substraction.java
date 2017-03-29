@@ -5,7 +5,8 @@ public class Substraction implements IOperation {
 	@Override
 	public Integer perform(IExpression left, IExpression right) {
 		
-		return null;
+		Integer substraction = left.getValue() - right.getValue();
+		return substraction;
 	}
 
 }
