@@ -7,6 +7,7 @@ public class MapCreatorFromDat implements IMapCreator {
 
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
+		fileName= "Terrain.dat";
 		FileOutputStream datInput = new FileOutputStream(fileName);
 		
 

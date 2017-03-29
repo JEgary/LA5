@@ -4,13 +4,28 @@
 package edu.wmich.cs1120.la5;
 
 /**
- * @author fafat
+ * @author 
  *
  */
 public class Area implements IArea {
-
+	
+	private double basicEnergyCost;
+	private double elevation;
+	private double radiation;
+	private int threshold;
+	
 	public Area(Double basicEnergyCost, Double elevation, Double radiation, int threshold) {
-		// TODO Auto-generated constructor stub
+		this.basicEnergyCost= basicEnergyCost;
+		this.elevation= elevation;
+		this.radiation= radiation;
+		this.threshold= threshold;
+	}
+	
+	Area(){
+		basicEnergyCost= 0.0;
+		elevation = 0.0;
+		radiation = 0.0;
+		threshold = 0;
 	}
 
 	/* (non-Javadoc)
