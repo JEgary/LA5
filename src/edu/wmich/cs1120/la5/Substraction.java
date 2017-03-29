@@ -4,8 +4,9 @@ public class Substraction implements IOperation {
 
 	@Override
 	public Integer perform(IExpression left, IExpression right) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		Integer substraction = left.getValue() - right.getValue();
+		return substraction;
 	}
 
 }
