@@ -1,6 +1,6 @@
 package edu.wmich.cs1120.la5;
 
-import java.io.FileOutputStream;
+import java.io.*;
 import java.io.IOException;
 
 public class MapCreatorFromDat implements IMapCreator {
@@ -9,7 +9,10 @@ public class MapCreatorFromDat implements IMapCreator {
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		fileName= "Terrain.dat";
 
-		FileOutputStream datInput = new FileOutputStream(fileName);
+		FileInputStream datInputStream = new FileInputStream(fileName);
+		DataInputStream inputFile = new DataInputStream(datInputStream);
+		
+		//inputFile.read
 
 		
 
