@@ -4,12 +4,16 @@
 package edu.wmich.cs1120.la5;
 
 /**
- * @author Jason Gary
+ * @author fafat
  *
  */
-public abstract class Area implements IArea {
+public class Area implements IArea {
 
-	/** (non-Javadoc)
+	public Area(Double basicEnergyCost, Double elevation, Double radiation, int threshold) {
+		// TODO Auto-generated constructor stub
+	}
+
+	/* (non-Javadoc)
 	 * @see edu.wmich.cs1120.la5.IArea#getBasicEnergyCost()
 	 */
 	@Override
@@ -18,7 +22,7 @@ public abstract class Area implements IArea {
 		return 0;
 	}
 
-	/** (non-Javadoc)
+	/* (non-Javadoc)
 	 * @see edu.wmich.cs1120.la5.IArea#setBasicEnergyCost(double)
 	 */
 	@Override
