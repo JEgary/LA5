@@ -1,12 +1,14 @@
 package edu.wmich.cs1120.la5;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class MapCreatorFromDat implements IMapCreator {
 
 	@Override
 	public void scanTerrain(String fileName, int threshold) throws IOException {
-		// TODO Auto-generated method stub
+		FileOutputStream datInput = new FileOutputStream(fileName);
+		
 
 	}
 

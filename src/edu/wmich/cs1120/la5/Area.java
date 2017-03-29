@@ -9,7 +9,7 @@ package edu.wmich.cs1120.la5;
  */
 public abstract class Area implements IArea {
 
-	/* (non-Javadoc)
+	/** (non-Javadoc)
 	 * @see edu.wmich.cs1120.la5.IArea#getBasicEnergyCost()
 	 */
 	@Override
@@ -18,7 +18,7 @@ public abstract class Area implements IArea {
 		return 0;
 	}
 
-	/* (non-Javadoc)
+	/** (non-Javadoc)
 	 * @see edu.wmich.cs1120.la5.IArea#setBasicEnergyCost(double)
 	 */
 	@Override
