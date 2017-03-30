@@ -34,12 +34,12 @@ public class EnergyAnalyzer implements IRover {
 	/**
 	 * Finds the total energy cost of the path and creates the analysis
 	 */
-	public void analysePath() {
+	public void analyzePath() {
 		double total = 0;
 		for (int i = 0; i < path.size(); i++){
 			total += path.get(i).getBasicEnergyCost();
 		}
-	    analysis = "Energy Analyzer: " + total;
+	    analysis = "Total Energy: " + total;
 
 	}
 
