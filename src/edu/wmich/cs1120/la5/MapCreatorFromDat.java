@@ -12,14 +12,12 @@ import edu.wmich.cs1120.la5.TerrainScanner;
 public class MapCreatorFromDat implements IMapCreator {
 	private TerrainScanner tS = new TerrainScanner();
 	
-<<<<<<< HEAD
+
 	/**
 	 * @author Jason Gary
 	 * @param file name "terrain.dat" and threshold given by user
 	 * @return void
 	 */
-=======
->>>>>>> branch 'master' of https://github.com/JEgary/LA5.git
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		Addition add = new Addition();
 		Substraction sub = new Substraction();
