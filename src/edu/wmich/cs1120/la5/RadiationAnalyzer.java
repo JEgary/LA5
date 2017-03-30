@@ -36,20 +36,20 @@ public class RadiationAnalyzer implements IRover {
 	/**
 	 * calculates the total amount of radiation in the path
 	 */
-	public void analysePath() {
+	public void analyzePath() {
 		double total = 0;
 		for(int i = 0; i < path.size(); i++){
 			total += path.get(i).getRadiation();
 		}
 		
-		analysis = "Radiation Analyzer: " + analysis;
+		analysis = "Total Radiation: " + total;
 
 	}
 
 	@Override
 	/**
 	 * Getter for the analysis
-	 * @return Returns String of anlysis
+	 * @return Returns String of analysis
 	 */
 	public String getAnalysis() {
 		return analysis;

@@ -34,7 +34,7 @@ public class ElevationAnalyzer implements IRover {
 	/**
 	 * Finds the average elevation of the path and creates the analysis
 	 */
-	public void analysePath() {
+	public void analyzePath() {
 		double total = 0;
 		double avg = 0;
 		int i;
@@ -43,7 +43,7 @@ public class ElevationAnalyzer implements IRover {
 		}
 		avg = total/(i + 1);
 		
-		this.analysis = "Elevation Analyzer: " + avg;
+		this.analysis = "Average Elevation: " + avg;
 
 	}
 

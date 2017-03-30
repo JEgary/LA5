@@ -9,7 +9,7 @@ public class MapCreatorFromDat implements IMapCreator {
 	
 	/**
 	 * @author Jason Gary
-	 * @param file name "terrain.dat" and threshhold given by user
+	 * @param file name "terrain.dat" and threshold given by user
 	 * @return void
 	 */
 	public void scanTerrain(String fileName, int threshold) throws IOException {

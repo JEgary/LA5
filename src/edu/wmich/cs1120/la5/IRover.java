@@ -6,7 +6,7 @@ public interface IRover {
 	
 	public ArrayList<IArea> getPath();
 	public void setPath(ArrayList<IArea> path);
-	public void analysePath();
+	public void analyzePath();
 	public String getAnalysis();
 	public void setAnalysis(String analysis);
 	public String toString();
