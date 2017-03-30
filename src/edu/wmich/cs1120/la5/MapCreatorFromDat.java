@@ -7,7 +7,11 @@ import edu.wmich.cs1120.la5.TerrainScanner;
 public class MapCreatorFromDat implements IMapCreator {
 	TerrainScanner tS = new TerrainScanner();
 	
-	@Override
+	/**
+	 * @author Jason Gary
+	 * @param file name "terrain.dat" and threshhold given by user
+	 * @return void
+	 */
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		Addition add = new Addition();
 		Substraction sub = new Substraction();
@@ -29,11 +33,6 @@ public class MapCreatorFromDat implements IMapCreator {
 				val1.setValue(datIn.readInt());
 				val2.setValue(datIn.readInt());
 				
-				if(biChar== '+'){
-					datIn.seek(add.perform(val1, val2));
-				}else if(biChar=='-'){
-					datIn.seek(sub.perform(val1, val2));
-				}
 			}
 			
 		}
