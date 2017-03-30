@@ -25,7 +25,6 @@ public class MapCreatorFromDat implements IMapCreator {
 		
 		for(int row = 0; row<10; row++){
 			for(int col = 0; col<10; col++){
-				System.out.println("working");
 				datArea[row][col]=new Area();
 				datArea[row][col].setBasicEnergyCost(datIn.readDouble());
 				datArea[row][col].setElevation(datIn.readDouble());
@@ -35,11 +34,11 @@ public class MapCreatorFromDat implements IMapCreator {
 				val1.setValue(datIn.readInt());
 				val2.setValue(datIn.readInt());
 			
-				if(biChar == '+'){
-					datIn.seek(add.perform(val1, val2));		
-				}else if (biChar == '-'){
-					datIn.seek(sub.perform(val1, val2));
-				} //seek( op result ( 3*Double.byte+1*Character.byte+ 2*Integer.byte)
+//				if(biChar == '+'){
+//					datIn.seek(add.perform(val1, val2));		
+//				}else if (biChar == '-'){
+//					datIn.seek(sub.perform(val1, val2));
+//				} //seek( op result ( 3*Double.byte+1*Character.byte+ 2*Integer.byte)
 			}
 			
 			
