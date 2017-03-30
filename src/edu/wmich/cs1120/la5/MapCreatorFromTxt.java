@@ -6,9 +6,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import edu.wmich.cs1120.la3.Area;
-import edu.wmich.cs1120.la3.TerrainScanner;
-
 public class MapCreatorFromTxt implements IMapCreator {
 	private TerrainScanner scanner;
 	private IArea area;
