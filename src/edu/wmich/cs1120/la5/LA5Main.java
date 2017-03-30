@@ -11,7 +11,7 @@ public class LA5Main {
 		while( userIn == 'y'||userIn=='Y'){
 		MainWindow.startGUI();
 		
-		userIn=JOptionPane.showInputDialog("Do again?").charAt(0);
+		userIn=JOptionPane.showInputDialog("Do again? yes or no").charAt(0);
 		}
 
 	}
