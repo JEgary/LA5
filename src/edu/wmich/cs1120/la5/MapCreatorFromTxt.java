@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
 /**
  * 
  * @author Edgar
@@ -20,11 +21,6 @@ public class MapCreatorFromTxt implements IMapCreator {
 	private IArea[][] areaArray;
 
 	@Override
-	/**
-	 * This method reads from a .txt file to generate a 2D array of area objects to generate a path.
-	 * @param Takes in a filename, and a user-inputed threshold for the energy
-	 * 
-	 */
 	public void scanTerrain(String fileName, int threshold) throws IOException {
 		String line;
 		String[] values = new String[3];
@@ -71,19 +67,11 @@ public class MapCreatorFromTxt implements IMapCreator {
 	}
 
 	@Override
-	/**
-	 * Getter for the terrainScanner
-	 * @return returns the TerrainScanner
-	 */
 	public TerrainScanner getScanner() {
 		return this.scanner;
 	}
 
 	@Override
-	/**
-	 * Setter for the terrainScanner
-	 * @param takes in TerrainScanner
-	 */
 	public void setScanner(TerrainScanner scanner) {
 		this.scanner = scanner;
 
