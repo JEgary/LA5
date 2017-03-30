@@ -6,6 +6,15 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+
+/**
+ * 
+ * @author Edgar
+ * This class is responsible for reading from a .txt file to get the basic cost, elevation, and radiation of the area.
+ * It puts that information into a 2D Array which is used by the GUI to generate a path.
+ *
+ */
+
 public class MapCreatorFromTxt implements IMapCreator {
 	private TerrainScanner scanner;
 	private IArea area;
