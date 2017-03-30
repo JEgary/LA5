@@ -22,36 +22,41 @@ public class MapCreatorFromTxt implements IMapCreator {
 		Double elevation;
 		Double radiation;
 		areaArray = new Area[10][10];
-		
+		ArrayList<IArea> OneDim = new ArrayList<IArea>();
+		int index = 0;
+
 		try {
 			FileReader reader = new FileReader(fileName);
 			BufferedReader buffer = new BufferedReader(reader);
 
-			while ((line = buffer.readLine()) != null){
+			while ((line = buffer.readLine()) != null) {
 				values = line.split(" ");
 				basicEnergyCost = Double.parseDouble(values[0]);
 				elevation = Double.parseDouble(values[1]);
 				radiation = Double.parseDouble(values[2]);
 				area = new Area(basicEnergyCost, elevation, radiation, threshold);
-				
-				for (int row = 0; row < areaArray.length; row++){
-					for (int col = 0; col < areaArray.length; col++){
-						areaArray[row][col] = area;
-					}
-				}
-				
-				scanner.setTerrain(areaArray);
-				
-				
-			
+
+				OneDim.add(area);
+
 			}
-			
+
 			buffer.close();
 		} catch (FileNotFoundException ex) {
 			System.out.println("Invalid file");
 		} catch (IOException ex) {
 			System.out.println("Error reading file");
 		}
+
+		int ind = 0;
+
+		for (int row = 0; row < areaArray.length; row++) {
+			for (int col = 0; col < areaArray.length; col++) {
+				areaArray[row][col] = OneDim.get(ind);
+				ind++;
+			}
+		}
+
+		scanner.setTerrain(areaArray);
 
 	}
 
